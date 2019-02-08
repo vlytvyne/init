@@ -1,0 +1,1 @@
+networksetup -listallhardwareports | grep Bluetooth -A2 | grep Address | cut -d " " -f 3
