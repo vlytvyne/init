@@ -1,0 +1,5 @@
+networksetup -setdnsservers intra.42.fr 46.19.122.85
+
+Or I can add '46.19.122.85 intra.42.fr' to my '/etc/hosts file'
+
+I can also do it manually via System Preferences GUI

@@ -1,0 +1,3 @@
+At first we have to figure out Slash16.org's IP address via nslookup Slash16.org (52.84.197.107)
+
+Then we have to lookup this address using WHOIS protocol (type "whois" in CL), which will give us information that the IP is Amazon Technologies Inc. property

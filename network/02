@@ -1,1 +1,6 @@
-ifconfig en0 | grep "inet " | cut -d " " -f 2
+ipconfig getifaddr en0
+#     getifaddr interface-name
+#          Prints to standard output the IP address for the first net-
+#          work service associated with the given interface.  The output
+#          will be empty if no service is currently configured or active
+#          on the interface.
