@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -e /root/hash.md5 ]
+then
+    if ! md5sum -c /root/hash.md5
+    then
+	echo "Crontab file has changed" | mail -s "Crontab changed" root
+	md5sum /etc/crontab > /root/hash.md5
+    fi
+else
+    md5sum /etc/crontab > /root/hash.md5
+fi
+
+# To schedule this task add entry '@midnight /root/check.sh' in crontab file
+# Schedule this task for root user

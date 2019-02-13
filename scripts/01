@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat /etc/passwd | grep -v "#" | awk -F: '{printf "Login: %-25s UID: %-5s Path: %-20s\n", $1, $3, $6}'
