@@ -1,9 +1,0 @@
-#!/bin/bash
-
-LOG_FILE=/var/log/update_script.log
-
-apt-get update >> $LOG_FILE
-apt-get upgrade >> $LOG_FILE
-
-#To schedule this task add entry '0 4 * * 0 sh path_to_script'
-#One can easily do it using 'crontab -e'

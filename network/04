@@ -1,1 +1,1 @@
-netstat -rn | grep default | head -1 | tr -s " " | cut -d " " -f 2
+netstat -rn | grep default | tr -s " " | cut -d " " -f 2 | tr '\n' ' ' | awk '{print "IPv4: " $1 "\nIPv6: " $2}'
